@@ -15,8 +15,8 @@
     ],
     "scripts": {
         "dev": "ts-node-dev --clear src/server.ts",
-        "build": "tsc",
-        "start": "node build/server.js"
+        "build": "tsc -p .",
+        "start": "node dist/server.js"
     },
     "devDependencies": {
         "@types/express": "^4.17.13",

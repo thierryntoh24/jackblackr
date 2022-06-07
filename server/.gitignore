@@ -15,6 +15,7 @@ firebase-adminsdk.json
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
