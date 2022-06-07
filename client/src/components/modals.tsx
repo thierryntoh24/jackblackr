@@ -442,7 +442,7 @@ const
                         <div className="form-footer">
                             <button className="place-bet"
                                 onClick={() => {
-                                    if (balance - input > 0 && input > 0 && !isNaN(input)) {
+                                    if (balance - input >= 0 && input > 0 && !isNaN(input)) {
                                         toggle(true) // trying to get those slow-effects, man
                                         setActiveModal!('')
                                         setTimeout(() => {
