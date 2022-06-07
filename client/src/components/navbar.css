@@ -1,0 +1,171 @@
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem 6.25em;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--fd);
+}
+
+.logotype {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logotype h6 {
+    font-family: inherit;
+    font-size: .75rem;
+    color: var(--dark);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em
+}
+
+.nav .primary {
+    background-color: var(--dark);
+    font-weight: 700;
+}
+
+.dropdiv,
+.icon.theme {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.drop-menu {
+    position: absolute;
+    right: 0px;
+    top: 150%
+}
+
+.drop-body {
+    border: 1px solid var(--d2d);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 220px;
+    border-radius: .1em;
+    background-color: var(--l2fd);
+}
+
+.drop-body .icon {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.drop-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.drop-body span {
+    font-size: .75rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.icon.toggle {
+    margin-left: auto;
+}
+
+.icon.github {
+    fill: none;
+}
+
+.divider {
+    border-top: .1px solid var(--d2d);
+    margin: .4em 0;
+}
+
+.drop-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.drop-footer span {
+    /* user-select: all; */
+    font-size: .75rem;
+}
+
+.drop-footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.drop-item.feedback {
+    position: relative;
+}
+
+.drop-item.feedback span {
+    width: 85%;
+}
+
+.drop-item.feedback .feedback-modal {
+    position: absolute;
+    right: 110%;
+    border: 1px solid var(--d2d);
+    border-radius: .1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--l2fd);
+    cursor: default;
+}
+
+.drop-item.feedback .feedback-modal .title {
+    font-size: 1rem;
+}
+
+.drop-item.feedback .feedback-modal span {
+    font-size: .75rem;
+    width: 100%;
+}
+
+.drop-item.feedback .feedback-modal textarea {
+    padding: .8em;
+    font-size: .8rem;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: var(--d2l);
+    background-color: var(--primary);
+    border: 1px solid var(--d2d);
+    resize: none;
+    scroll-behavior: smooth;
+    border-radius: .1em;
+}
+
+@media screen and (max-width:1280px) {
+    .navbar {
+        padding: 1.2em 2.6em;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navbar {
+        padding: .8em 2em;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .drop-item.feedback .feedback-modal {
+        top: 120%;
+        right: 20%;
+    }
+}
