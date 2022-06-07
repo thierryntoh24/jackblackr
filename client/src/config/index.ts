@@ -16,7 +16,7 @@ const config = {
         privateKey: `${process.env.REACT_APP_EMAILJS_PRIVATE_KEY}`, 
         publicKey: `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`
     },
-    server: `${process.env.SERVER || 'http://localhost:8080'}`
+    server: `${process.env.SERVER || 'https://jackblackr.herokuapp.com' || 'http://localhost:8080'}`
 }
 
 export default config
